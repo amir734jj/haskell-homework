@@ -1,4 +1,3 @@
-
 -- Creates a Double array given (from, to, count)
 range :: Integer -> Integer -> Integer -> [Double]
 range from to 0 = [];
@@ -7,16 +6,15 @@ range from to count = do
   let lst = [0] ++ [increment, increment + increment ..]
   take (fromIntegral count) lst
 
-
 -- Create 10^n
 tens :: Int -> Integer
 tens n = fromIntegral(product (take n [10, 10 .. ]))
 
 -- Rounds list of numbers to n decimal places
-rd n x = map (\r -> truncate(r * (tens n)) `div` (tens n)) x
+rd :: Int -> [Double] -> [Double]
+rd n x = map (\r -> fromIntegral(truncate(r * fromIntegral(tens n))) / fromIntegral(tens n)) x
 
-main = do
-  print (rd 2 [2.123,3.456,4.675])
-
+-- Main driver
 main = do
   print (range 0 1 10)
+  print (rd 2 [2.123,3.456,4.675])
