@@ -19,6 +19,41 @@ absolute :: [(Double, Double)] -> [Double]
 absolute [] = []
 absolute ((x,y) : xs) = (sqrt (x^2 + y^2)) : (absolute xs)
 
+
+-- void dft(double[] inreal , double[] inimag, double[] outreal, double[] outimag) {
+--     int n = inreal.length;
+--     for (int k = 0; k < n; k++) {      // For each output element
+--         double sumreal = 0;
+--         double sumimag = 0;
+--         for (int t = 0; t < n; t++) {  // For each input element
+--             double angle = 2 * Math.PI * t * k / n;
+--             sumreal +=  inreal[t] * Math.cos(angle) + inimag[t] * Math.sin(angle);
+--             sumimag += -inreal[t] * Math.sin(angle) + inimag[t] * Math.cos(angle);
+--         }
+--         outreal[k] = sumreal;
+--         outimag[k] = sumimag;
+--     }
+-- }
+
+-- Length of the array
+ownLength :: [t] -> Int
+ownLength [] = 0
+ownLength (_: xs) = 1 + ownLength xs
+
+-- 
+dft_resolve :: [((Int, Int), Int)] -> Int
+dft_resolve (((x, y), i) : xs) = x
+
+-- 
+dft :: [t] -> [(t, Int)]
+dft [] = []
+dft ls = (zip ls [0..])
+
+-- Main driver
+main = do
+  print dft_resolve([((1,2), 3)])
+  print (dft [(1,2), (3,4)])
+
 -- Main driver
 main = do
   print (range 0 1 10)
