@@ -40,22 +40,39 @@ ownLength :: [t] -> Int
 ownLength [] = 0
 ownLength (_: xs) = 1 + ownLength xs
 
--- 
-dft_resolve :: [((Int, Int), Int)] -> Int
-dft_resolve (((x, y), i) : xs) = x
+dft_resolve_nested :: [((Double, Double), Double)] -> Double -> Int -> [(Double, Double)]
+dft_resolve_nested [] _ _ = []
+dft_resolve_nested (((x, y), t) : xs) k n = do
+  let angle = 2.0 * pi * ( t) * ( k) / (fromIntegral n)
+  let sumreal = x * (cos angle) + y * (sin angle)
+  let sumimag = - x * (sin angle) + y * (cos angle)
+  (sumreal, sumimag) : (dft_resolve_nested xs k n)
 
--- 
-dft :: [t] -> [(t, Int)]
+
+tuples_sum :: [(Double, Double)] -> (Double, Double)
+tuples_sum [] = (0, 0)
+tuples_sum ((x1, y1) : xs) = do
+  let (x2, y2) = tuples_sum xs
+  (x1 + x2, y1 + y2)
+
+
+dft_resolve ::  [((Double, Double), Double)] -> [(Double, Double)]
+dft_resolve [] = []
+dft_resolve ls = do
+  let n = ownLength ls
+  let (((x, y), k) : xs) = ls
+  let (xr, yr) = tuples_sum (dft_resolve_nested ls k n)
+  (xr, yr) : (dft_resolve xs)
+
+
+dft :: [(Double, Double)] -> [(Double, Double)]
 dft [] = []
-dft ls = (zip ls [0..])
+dft ls = dft_resolve (zip ls [0..])
 
--- Main driver
-main = do
-  print dft_resolve([((1,2), 3)])
-  print (dft [(1,2), (3,4)])
 
 -- Main driver
 main = do
   print (range 0 1 10)
   print (rd 2 [2.123,3.456,4.675])
   print (absolute [(1,2), (3,4)] )
+  print (dft [(1,2), (3,4)])
