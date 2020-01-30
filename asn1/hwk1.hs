@@ -20,19 +20,19 @@ absolute [] = []
 absolute ((x,y) : xs) = (sqrt (x^2 + y^2)) : (absolute xs)
 
 
--- void dft(double[] inreal , double[] inimag, double[] outreal, double[] outimag) {
---     int n = inreal.length;
---     for (int k = 0; k < n; k++) {      // For each output element
---         double sumreal = 0;
---         double sumimag = 0;
---         for (int t = 0; t < n; t++) {  // For each input element
---             double angle = 2 * Math.PI * t * k / n;
---             sumreal +=  inreal[t] * Math.cos(angle) + inimag[t] * Math.sin(angle);
---             sumimag += -inreal[t] * Math.sin(angle) + inimag[t] * Math.cos(angle);
---         }
---         outreal[k] = sumreal;
---         outimag[k] = sumimag;
+-- void dft(float x[], float result[], uint32_t num_elems) {
+--   // See: "modified C code" from https://batchloaf.wordpress.com/2013/12/07/simple-dft-in-c/ 
+--   // to simplify does not use pre-computed cos/sin(z)
+--   for(uint32_t k = 0; k < num_elems; k++) {
+--     float xre[num_elems]; // Real component
+--     float xim[num_elems]; // Imaginary component
+--     for(uint64_t n = 0; n < num_elems; n++) {
+--       float z = (2 * M_PI * k * n) / num_elems;
+--       xre[n] += x[n] * cos(z);
+--       xim[n] -= x[n] * sin(z);
 --     }
+--     result[k] = (xre[k] * xre[k]) * (xim[k] * xim[k]);
+--   }
 -- }
 
 -- Length of the array
@@ -40,22 +40,42 @@ ownLength :: [t] -> Int
 ownLength [] = 0
 ownLength (_: xs) = 1 + ownLength xs
 
--- 
-dft_resolve :: [((Int, Int), Int)] -> Int
-dft_resolve (((x, y), i) : xs) = x
+dft_resolve_nested :: [(Double, Double)] -> Double -> Double -> Int -> [(Double, Double)]
+dft_resolve_nested [] _ _ _ = []
+dft_resolve_nested ((x, k) : xs) xk k num_elems = do
+  let angle = 2.0 * pi * t * k / (fromIntegral n)
+  let sumreal = x * (cos angle) + y * (sin angle)
+  let sumimag = - x * (sin angle) + y * (cos angle)
+  (sumreal, sumimag) : (dft_resolve_nested xs k n)
 
--- 
-dft :: [t] -> [(t, Int)]
+
+tuples_sum :: [(Double, Double)] -> (Double, Double)
+tuples_sum [] = (0, 0)
+tuples_sum ((x1, y1) : xs) = do
+  let (x2, y2) = tuples_sum xs
+  (x1 + x2, y1 + y2)
+
+
+dft_resolve ::  [(Double, Double)] -> [(Double, Double)]
+dft_resolve [] = []
+dft_resolve ls = do
+  let num_elems = ownLength ls
+  let ((x, k) : xs) = ls
+  let (xr, yr) = tuples_sum (dft_resolve_nested ls x k num_elems)
+  (xr, yr) : (dft_resolve xs)
+
+
+-- Entry point to calculate the DFT
+dft :: [Double] -> [(Double, Double)]
 dft [] = []
-dft ls = (zip ls [0..])
+dft ls = dft_resolve (zip ls [0..])
+
 
 -- Main driver
 main = do
-  print dft_resolve([((1,2), 3)])
-  print (dft [(1,2), (3,4)])
-
--- Main driver
-main = do
-  print (range 0 1 10)
-  print (rd 2 [2.123,3.456,4.675])
-  print (absolute [(1,2), (3,4)] )
+  let n = 64
+  let s = map (\t -> sin(10*2*pi*t) + sin(20*2*pi*t)/2) $ range 0 1 n
+  let result = s
+  -- print(rd 3 s)
+  -- print(rd 2 result)
+  print result
