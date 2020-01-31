@@ -40,13 +40,13 @@ ownLength :: [t] -> Int
 ownLength [] = 0
 ownLength (_: xs) = 1 + ownLength xs
 
-dft_resolve_nested :: [(Double, Double)] -> Double -> Double -> Int -> [(Double, Double)]
-dft_resolve_nested [] _ _ _ = []
-dft_resolve_nested ((x, k) : xs) xk k num_elems = do
-  let angle = 2.0 * pi * t * k / (fromIntegral n)
-  let sumreal = x * (cos angle) + y * (sin angle)
-  let sumimag = - x * (sin angle) + y * (cos angle)
-  (sumreal, sumimag) : (dft_resolve_nested xs k n)
+dft_resolve_nested :: [(Double, Double)] -> Double -> Int -> [(Double, Double)]
+dft_resolve_nested [] _ _ = []
+dft_resolve_nested ((xn, n) : xns) k num_elems = do
+  let angle = 2.0 * pi * k * n / (fromIntegral num_elems)
+  let sumreal = xn * (cos angle)
+  let sumimag = - xn * (sin angle)
+  (sumreal, sumimag) : (dft_resolve_nested xns k num_elems)
 
 
 tuples_sum :: [(Double, Double)] -> (Double, Double)
@@ -60,8 +60,8 @@ dft_resolve ::  [(Double, Double)] -> [(Double, Double)]
 dft_resolve [] = []
 dft_resolve ls = do
   let num_elems = ownLength ls
-  let ((x, k) : xs) = ls
-  let (xr, yr) = tuples_sum (dft_resolve_nested ls x k num_elems)
+  let ((_, k) : xs) = ls
+  let (xr, yr) = tuples_sum (dft_resolve_nested ls k num_elems)
   (xr, yr) : (dft_resolve xs)
 
 
@@ -75,7 +75,6 @@ dft ls = dft_resolve (zip ls [0..])
 main = do
   let n = 64
   let s = map (\t -> sin(10*2*pi*t) + sin(20*2*pi*t)/2) $ range 0 1 n
-  let result = s
-  -- print(rd 3 s)
-  -- print(rd 2 result)
-  print result
+  let result = map (\x -> x / (fromIntegral n)) $ absolute $ dft s
+  print(rd 3 s)
+  print(rd 2 result)
