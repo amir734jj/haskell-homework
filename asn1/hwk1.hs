@@ -20,6 +20,7 @@ absolute [] = []
 absolute ((x,y) : xs) = (sqrt (x^2 + y^2)) : (absolute xs)
 
 
+-- Source of C code: https://github.com/winksaville/dft-in-C/blob/master/dft.c
 -- void dft(float x[], float result[], uint32_t num_elems) {
 --   // See: "modified C code" from https://batchloaf.wordpress.com/2013/12/07/simple-dft-in-c/ 
 --   // to simplify does not use pre-computed cos/sin(z)
@@ -40,6 +41,7 @@ ownLength :: [t] -> Int
 ownLength [] = 0
 ownLength (_: xs) = 1 + ownLength xs
 
+-- Recursive function to handle nested loop
 dft_resolve_nested :: [(Double, Double)] -> Double -> Int -> [(Double, Double)]
 dft_resolve_nested [] _ _ = []
 dft_resolve_nested ((xn, n) : xns) k num_elems = do
@@ -48,14 +50,14 @@ dft_resolve_nested ((xn, n) : xns) k num_elems = do
   let sumimag = - xn * (sin angle)
   (sumreal, sumimag) : (dft_resolve_nested xns k num_elems)
 
-
+-- Resolve sum of tuples given list of tuples it returns a single tuple representing the sum
 tuples_sum :: [(Double, Double)] -> (Double, Double)
 tuples_sum [] = (0, 0)
 tuples_sum ((x1, y1) : xs) = do
   let (x2, y2) = tuples_sum xs
   (x1 + x2, y1 + y2)
 
-
+-- Helper function to handle outer loop
 dft_resolve ::  [(Double, Double)] -> [(Double, Double)]
 dft_resolve [] = []
 dft_resolve ls = do
@@ -64,12 +66,10 @@ dft_resolve ls = do
   let (xr, yr) = tuples_sum (dft_resolve_nested ls k num_elems)
   (xr, yr) : (dft_resolve xs)
 
-
 -- Entry point to calculate the DFT
 dft :: [Double] -> [(Double, Double)]
 dft [] = []
 dft ls = dft_resolve (zip ls [0..])
-
 
 -- Main driver
 main = do
