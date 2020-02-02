@@ -1,3 +1,8 @@
+-- Name:       Seyedamirhossein Hesamian
+-- ePantherID: hesamian
+-- Notes:      Runs successfully and output matches with the expected output
+
+
 -- Creates a Double array given (from, to, count)
 range :: Integer -> Integer -> Integer -> [Double]
 range from to 0 = [];
