@@ -8,6 +8,7 @@ import Data.Time
 -- HW #1: copy/paste from the provided solution
 -- ********
 
+range :: (Ord a, Fractional a) => a -> a -> a -> [a]
 range from to count = next from count
   where
     step = (to - from) / count
@@ -15,15 +16,18 @@ range from to count = next from count
       | count <= 0 = []
       | otherwise = from : next (from + step) (count -1)
 
+absolute :: Floating a => [(a, a)] -> [a]
 absolute [] = []
 absolute ((r, i) : rest) = sqrt (r * r + i * i) : absolute (rest)
 
+rd :: (Integral b, RealFrac a) => b -> [a] -> [a]
 rd _ [] = []
 rd n (a : b) = f a : rd n b
   where
     f x = fromIntegral (round (c * x)) / c
     c = 10 ^ n
 
+dft :: (Ord b, Floating b) => [b] -> [(b, b)]
 dft x =
   let n = fromIntegral $ length x
       index = range 0 n n
@@ -85,10 +89,10 @@ fft list
   | otherwise =
     let (evenlist, oddlist) = split list
         n = length list
-        n2 = n `div` 2
-        elist = take n2 (fft evenlist)
-        olist = take n2 (fft oddlist)
-        explist = map (\l -> (cos (-2 * pi * fromIntegral (l) / fromIntegral (n)), sin (-2 * pi * fromIntegral (l) / fromIntegral (n)))) [0 .. (n2 -1)]
+        n_2 = n `div` 2
+        elist = take n_2 (fft evenlist)
+        olist = take n_2 (fft oddlist)
+        explist = map (\l -> (cos (-2 * pi * fromIntegral (l) / fromIntegral (n)), sin (-2 * pi * fromIntegral (l) / fromIntegral (n)))) [0 .. (n_2 -1)]
      in (firsty elist olist explist) ++ (secondy elist olist explist)
 
 -- explist is the list of complex numbers e^(-2*pi*i*k/N)
