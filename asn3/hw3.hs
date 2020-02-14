@@ -20,10 +20,10 @@ vec_op2 op x y = Vec (map (\r -> (fst r) `op` (snd r)) $ zip x y)
 instance Num a => Num (Vec a) where
    fromInteger i     = Vec (cycle [fromInteger(i)])
    signum (Vec x)    = vec_op1 (signum) x
+   abs  (Vec x)      = vec_op1 (abs) x
    negate  (Vec x)   = vec_op2 (*) x (cycle [-1])
    (Vec x) + (Vec y) = vec_op2 (+) x y
    (Vec x) * (Vec y) = vec_op2 (*) x y
-   abs  (Vec x)      = vec_op1 (abs) x
 
 main = do
    let v1 = Vec [1,2,3]
