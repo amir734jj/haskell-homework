@@ -1,3 +1,6 @@
+-- Name:       Seyedamirhossein Hesamian
+-- ePantherID: hesamian
+-- Notes:      Runs successfully and output matches with the expected output
 import Data.Complex
 import Data.Time
 import GHC.Base
