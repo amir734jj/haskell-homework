@@ -2,11 +2,11 @@
 {-
  -  <DeclList> ::= { (<FunDecl> | <ValDecl>) }
  -
- -  <FunDecl> ::= 'fun' <Ident> <Ident> '=' <Exp> 
+ -  <FunDecl> ::= 'fun' <Ident> <Ident> '=' <Exp>
  -
- -  <ValDecl> ::= 'val' <Ident> '=' <Exp> 
+ -  <ValDecl> ::= 'val' <Ident> '=' <Exp>
  -
- -  <Expr> ::= <Comp> 
+ -  <Expr> ::= <Comp>
  -           | 'if' <Expr> 'then' <Expr> 'else' <Expr>
  -           | 'let' <DeclList> 'in' <Expr> 'end'
  -           | 'fn' <Ident> '=>' <Expr>
@@ -19,8 +19,8 @@
  -
  -  <App>  ::= <Fact> { <Fact> }
  -
- -  <Fact> ::= '(' <Expr> ')' 
- -          |  <Integer>     
+ -  <Fact> ::= '(' <Expr> ')'
+ -          |  <Integer>
  -          |  <Identifier>
  -}
 
@@ -31,7 +31,8 @@ module Parser where
 import Text.Parsec
 import Text.Parsec.Prim (unexpected)
 import Data.Either
- 
+import Text.Parsec.Char
+
 -- Abstract Syntax Tree ----------------------------------------------------------------------------------
 
 -- function/variable declaration
@@ -54,8 +55,8 @@ data Exp = Lt Exp Exp     -- e1 < e2
          | Const Integer  -- n
 
 instance Show Decl where
-  show (Fun f x e) = "fun " ++ f ++ " " ++ x ++ " = " ++ show e 
-  show (Val x e) = "val " ++ x ++ " = " ++ show e 
+  show (Fun f x e) = "fun " ++ f ++ " " ++ x ++ " = " ++ show e
+  show (Val x e) = "val " ++ x ++ " = " ++ show e
 
 instance Show Exp where
   show (Const x) = show x
@@ -87,9 +88,9 @@ run p input = putStrLn $ case parse p "" input of
        Left error -> show error
        Right x    -> show x
 
--- return Either AST or parse error 
+-- return Either AST or parse error
 runParser :: Parser a -> String -> Either ParseError a
-runParser p input = parse p "" input 
+runParser p input = parse p "" input
 
 -- Lexer
 
@@ -117,21 +118,128 @@ end_ = keyword "end"
 val_ = keyword "val"
 
 identifier :: Parser String                                -- identifier that won't collide with keywords
-identifier = try $ do 
-    name <- ident 
-    if name `elem` reserved 
-      then unexpected ("reserved word " ++ name) -- throw parse error 
-      else return name 
-  where 
+identifier = try $ do
+    name <- ident
+    if name `elem` reserved
+      then unexpected ("reserved word " ++ name) -- throw parse error
+      else return name
+  where
     reserved = ["if", "then", "else", "fn", "fun", "let", "in", "end", "val"]
 
 -- Parser for the (phrase) grammar
 
-prog :: Parser [Decl]         
+prog :: Parser [Decl]
 prog = skipMany space >> declList                              -- skip leading spaces
 
 declList :: Parser [Decl]                                      -- parse a list of function or variable declarations
 declList = many $ valDecl <|> funDecl
+
+-- TODO
+
+
+valDecl :: Parser Decl        -- 'val' <Ident> '=' <Exp>
+valDecl = do
+    val_
+    idName <- identifier
+    keyword "="
+    exp <- expDecl
+    return $ Val idName exp
+
+
+funDecl :: Parser Decl        -- 'fun' <Ident> <Ident> '=' <Exp>
+funDecl = do
+    fun_
+    funname <- identifier
+    varname <- identifier
+    keyword "="
+    exp <- expDecl
+    return $ Fun funname varname exp
+
+
+--  <Expr> ::= <Comp>
+--           | 'if' <Expr> 'then' <Expr> 'else' <Expr>
+--           | 'let' <DeclList> 'in' <Expr> 'end'
+--           | 'fn' <Ident> '=>' <Expr>
+expDecl :: Parser Exp
+expDecl = compDecl <|> ifDecl <|> letDecl <|> fnDecl
+
+
+--  <Comp> ::= <Plus> { ('>' | '=' | '<') <Plus> }
+compDecl :: Parser Exp
+compDecl = plusDecl `chainl1` (lexeme compOp)
+
+compOp :: Parser (Exp -> Exp -> Exp)
+compOp = (char '>' >> return Gt)
+        <|> (char '=' >> return Eq)
+        <|> (char '<' >> return Lt)
+
+
+-- <Plus> ::= <Mult> { ('+' | '-') <Mult> }
+plusDecl :: Parser Exp
+plusDecl = multDecl `chainl1` (lexeme plusOp)
+
+plusOp :: Parser (Exp -> Exp -> Exp)
+plusOp = (char '+' >> return Plus)
+        <|> (char '-' >> return Minus)
+
+
+-- <Mult> ::= <App>  { ('*' | '/') <App> }
+multDecl :: Parser Exp
+multDecl = appDecl `chainl1` (lexeme multOp)
+
+multOp :: Parser (Exp -> Exp -> Exp)
+multOp = (char '*' >> return Times)
+        <|> (char '/' >> return Div)
+
+
+-- <App>  ::= <Fact> { <Fact> }
+-- integer = (read <$> (lexeme $ many1 digit)) <?> "integer"
+appDecl :: Parser Exp
+appDecl =  factDecl `chainl1` appDecl1
+
+appDecl1 = (spaces >> return App)
+
+
+--  <Fact> ::= '(' <Expr> ')'
+--          |  <Integer>
+--         |  <Identifier>
+factDecl :: Parser Exp
+factDecl = (parens expDecl)
+        <|> (do { n <- lexeme integer; return $ Const n})
+        <|> (do { idName <- identifier; return $ Var idName})
+
+
+parens p = do {char '('; x <- p; char ')'; return x}
+
+
+ifDecl :: Parser Exp          -- 'if' <Expr> 'then' <Expr> 'else' <Expr>
+ifDecl = do
+    if_
+    exp1 <- expDecl
+    then_
+    exp2 <- expDecl
+    else_
+    exp3 <- expDecl
+    return $ If exp1 exp2 exp3
+
+
+letDecl :: Parser Exp        -- 'let' <DeclList> 'in' <Expr> 'end'
+letDecl = do
+    let_
+    dl <- declList
+    in_
+    exp <- expDecl
+    end_
+    return $ Let dl exp
+
+
+fnDecl :: Parser Exp         -- 'fn' <Ident> '=>' <Expr>
+fnDecl = do
+    fn_
+    id <- identifier
+    keyword "=>"
+    exp <- expDecl
+    return $ Fn id exp
 
 
 
@@ -140,9 +248,9 @@ declList = many $ valDecl <|> funDecl
 
 main :: IO ()
 main = do
-         let fact = "fun fact x = if x < 1 then 1 else x * fact (x-1)\n"
+         let fact = "fun fact x = if x < 1 then 1 else x * fact (x-1)"
          let it = "val it = let val y = 10 in fact y end"
-         
-         let d = (fact ++ it) 
+
+         let d = (fact ++ it)
 
          run prog d
