@@ -32,7 +32,7 @@ main = do
   let actions = map request urls
   ms <- finish actions 2
   mapM_ putStrLn ms
- where
+  where
     request :: (String, String) -> IO () -> IO String
     request (url, f) canceller = do
          d <- simpleHttp url
