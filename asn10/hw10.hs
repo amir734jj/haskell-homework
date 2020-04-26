@@ -6,23 +6,22 @@ import Control.Exception (catch, displayException, SomeException(..))
 import qualified Data.ByteString.Lazy as L
 import Network.HTTP.Conduit
 
-canceller :: Int -> TVar Int -> IO()
-canceller n valueTVar = atomically $ do
-  count <- readTVar valueTVar
-  writeTVar valueTVar (count + 1)
+canceller1 :: Int -> TVar Int -> IO()   -- canceller1 n cTVar is the piece of code that is executed in the canceller part of the main
+canceller1 n cTVar = atomically $ do
+  count <- readTVar cTVar           -- we get the current counter
+  writeTVar cTVar (count + 1)       -- then we increase the counter
 
 finish :: [IO () -> IO b] -> Int -> IO [b]
 finish actions n = do
-  v1 <- newTVarIO 0       -- counter mvar
-  a <- mapM (\x -> async $ x (canceller n v1)) actions   -- we run all the actions
-  let g x = if x <= n
-         then do
-             value <- atomically $ readTVar v1
-             g value
-         else mapM_ cancel a
-  g 0             
-  l <- mapM wait a   -- we wait for all the results (some of them cancelled)
-  return $ l         -- we return the list of results
+  cTVar <- newTVarIO 0       -- counter TVar with initial value of 0
+  a <- mapM (\x -> async $ x (canceller1 n cTVar)) actions   -- we run all the actions passing canceller1 n cTVar
+  let g x = if x < n
+         then do      -- if we havent reached n then...
+             c <- atomically $ readTVar cTVar   -- we get the value of the counter
+             g c           -- and then run g again but with the current value of the counter
+         else mapM_ cancel a    -- if we reached n then we cancel
+  g 0           -- runs g with the initial value 0 of the counter
+  mapM wait a   -- we wait for all the results (some of them cancelled)
 
 main = do
   let urls = [("http://www.yahoo.com/", "test1.txt"),

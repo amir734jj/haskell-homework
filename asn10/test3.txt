@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" dir="ltr">
+
+<head>
+ <!-- data-info:v:20200418_22969664;a:f638840b-7a7b-4185-b3c1-642aee6d6386;cn:15;az:{did:a50ac9605f704ff085607b853101e440, rid: 15, sn: eastus-prod-hp, dt: 2020-04-24T14:38:07.8834577Z, bt: 2020-04-19T00:13:36.1270514Z};ddpi:1;dpio:;dpi:1;dg:downlevel.pc;th:start;PageName:startPage;m:en-us;cb:;l:en-us;mu:en-us;ud:{cid:,vk:homepage,n:,l:en-us,ck:};xd:BBnbhK2;ovc:f;al:;fxd:f;xdpub:2020-04-25 06:59:49Z;xdmap:2020-04-26 01:37:24Z;axd:;f:msnallexpusers,muidflt11cf,muidflt49cf,muidflt50cf,muidflt52cf,sign-button-cl,muidflt259cf,muidflt312cf,platagyedge1cf,audexedge2cf,moneyedge1cf,moneyedge2cf,moneyedge3cf,bingcollabedge2cf,moneyhz1cf,jslltelemetry;userOptOut:false;userOptOutOptions: -->
+ <meta name="robots" content="index, follow"/>
+ <link rel="canonical" href="http://www.msn.com/" />
+ 
+
+ <title>MSN | Outlook, Office, Skype, Bing, Breaking News, and Latest Videos</title>
+ <meta name="description" content="Your customizable and curated collection of the best in trusted news plus coverage of sports, entertainment, money, weather, travel, health and lifestyle, combined with Outlook/Hotmail, Facebook, Twitter, Bing, Skype and more."/>
+ 
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1" />
+ <link rel="stylesheet" href="//static-global-s-msn-com.akamaized.net/hp-eus/en-us/homepage/_sc/css/d7cb56b9-4ab53bd3/direction=ltr.locales=en-us.themes=start.dpi=resolution1x/ab-69ca4a-4e3b0a9b/90-67c322-ee5f2b10/2a-1f1669-a955659a/9b-ba6b1f-f94d3276/ab-52fe22-a648eab2/86-b413d7-63b61fa3/d1-7801d5-68ddb2ab/7a-660b57-4534563a/75-a00681-654638bf/67-69cfc0-8b2e4a25/ce-c210e9-9118303c?ver=20200418_22969664&amp;fdhead=msnallexpusers,muidflt11cf,muidflt49cf,muidflt50cf,muidflt52cf,sign-button-cl,muidflt259cf,muidflt312cf,platagyedge1cf,audexedge2cf,moneyedge1cf,moneyedge2cf,moneyedge3cf,bingcollabedge2cf,moneyhz1cf,jslltelemetry&amp;csopd=20200423195209&amp;csopdb=20200423192850" type="text/css" media="all" />
+ <script type="text/javascript">//<![CDATA[
+(function(n,t){function h(n,i,r){typeof n!="string"&&(r=i,i=n,n=t);i&&i.splice||(r=i,i=[]);n==it?a=!0:n==rt&&(v=!0);l(n,i,r,!1,!1)}function l(n,t,i,r,f,e){var s,y;if(!n||!c[n]){var h=ot(n,t),o=h.dependencyNotFound,l=h.resolved;if(o){typeof u[o]=="undefined"&&(u[o]=[]);u[o].push(e||{i:n,d:t,f:i,r:r,s:f});return}s=typeof i=="function";y=v&&a&&s&&!f;y?et(n,i,l,r):ft(s,n,i,l,r)}}function ft(n,t,i,r,u){var f;f=n?i.apply(null,r):i;d(t,f,u)}function et(n,t,i,r){setTimeout(function(){var u=t.apply(null,i);d(n,u,r)},1)}function d(t,i,r){r&&(i={});t&&(i?(c[t]=i,f.push(t),g()):n.console&&console.error("Dependencies resolved, but object still not defined (or is otherwise falsey). id:"+t+"; typeof obj: "+typeof i))}function g(){var t,s,h,i,o,c,r,n;if(e)e&&(e=2);else{t=[];do{for(e=1,h=f.length,i=0;i<h;i++)o=f[i],c=u[o]||[],t=t.concat(c),delete u[o];for(f=[],s=t.length,r=0;r<s;r++)n=t[r],l(n.i,n.d,n.f,n.r,n.s,n);t=[]}while(e>1);e=0}}function ot(n,t){for(var e,i=[],r,o=t?t.length:0,u=0;u<o;u++){var f=t[u],s=c[f],h=typeof s!="undefined";if(!h){if(e=st(n,f),e){i.push(e);continue}r||(r=f);break}i.push(s)}return o===i.length?{resolved:i}:{dependencyNotFound:r}}function st(i,r){var f=k.exec(r),e,u;if(f){if(e=f[1],u=n[e],u!==t)return u;s||(s=setTimeout(nt,w))}}function nt(){var i,r,e,o,h;s=0;i=!1;for(r in u)e=k.exec(r),e&&(o=e[1],h=n[o],h!==t?f.push(r):i=!0);i&&!s&&(s=setTimeout(nt,w));f.length&&g()}function ht(n,t,i){if((typeof n!="object"||n&&n.splice)&&(i=t,t=n,n={}),t&&t.splice||(i=t,t=[]),ct(n.js),i){var r,u=n.synchronous||!1;l(r,t,i,!0,u)}}function ct(n){if(typeof n=="string")tt(n);else if(n)for(var t=0;t<n.length;t++)tt(n[t])}function tt(n){if(!b[n]){b[n]=1;var i=o.getElementsByTagName("script")[0],t=o.createElement("script");t.src=n;t.onload=t.onreadystatechange=function(){this.readyState&&this.readyState!="loaded"&&this.readyState!="complete"||(t.onload=t.onreadystatechange=null,t.parentNode&&t.parentNode.removeChild(t))};i.parentNode.insertBefore(t,i)}}function lt(n){return ut?n?i.now():Math.round(i.now()):new Date-y}var it=n._jsLoaderAsyncCanary||"c.dom",rt="c.pageReveal",a=!1,v=typeof n._jsLoaderRevealMode=="undefined"?!0:n._jsLoaderRevealMode,i=n.performance,ut=i&&typeof i.now=="function",r=" ----- ",y=((i||{}).timing||{}).navigationStart||+new Date,o=n.document,p=null;try{p=n.localStorage}catch(at){}var c={date:Date,document:o,image:n.Image,localStorage:p,location:o&&o.location,navigator:navigator,pageStart:y,pageTime:lt,screen:n.screen,window:n},u={},f=[],e,w=50,s,b={},k=/^window\.(.+)$/;h.amd={jQuery:1};h.is=function(n){return typeof c[n]!="undefined"};n.define=h;n.require=ht;h.showUserMarks=function(){var n=["Mark Name"+r+"Start time in ms"];return i.getEntriesByType("mark").forEach(function(t){n.push(t.name+r+t.startTime+"ms")}),n.join("\n")};h.showUserMeasures=function(){var n=["Measure name"+r+"Start time in ms"+r+"Duration in ms"];return i.getEntriesByType("measure").forEach(function(t){n.push(t.name+r+t.startTime+"ms"+r+t.duration+"ms")}),n.join("\n")}})(window);define("navigation",["escape","location","document"],function(n,t,i){function o(t,i,r){var u=t[i],e,f;if(!u||u.length===0)return"";for(e="",f=0;f<u.length;f++)u[f]&&(e=e+r+i+"="+n.urlPart(u[f]),r==="?"&&(r="&"));return e}function u(n,t,i){var s=function(n){return n=n.replace(/\+/g," "),decodeURIComponent(n)},u={},o,e;if(n)for(n=n.split("#")[0],o=n.split("&"),e=0;e<o.length;e++){var h=o[e].split("="),r=h[0],f=h[1];i&&(r=s(r),f&&(f=s(f)));t||r==="item"?(u[r]||(u[r]=[]),u[r].push(f)):u[r]=f}return u}function f(n){var t=i.createElement("a");return t.href=n,{protocol:t.protocol,host:t.host,hostName:t.hostname,port:t.port,path:t.pathname,hash:t.hash,query:t.search,origin:t.origin}}function e(n){return f(n).hostName}var r={getUrl:function(n){return r.filter?r.filter(n):n},navigate:function(n,i){r.filter&&(n=r.filter(n));i?t.replace(n):t.href=n},getHostName:e,parseUrl:f,isLocal:function(n){var i=e(n);return!i||t.hostname==i},getParams:u,getParamsFromUrl:function(n,t,i){var r=n.split("?")[1];return u(r,t,i)},mergeQueryStringParams:function(t,i){var s,f,e,h,r,c;if(i){if(s=t.split("?"),s[1]){f=u(s[1],!1,!0);for(r in i)f[r]=i[r]}else f=i;t=s[0];e="?";h="item";for(r in f)r!==h&&(t+=f[r]?e+n.urlPart(r)+"="+n.urlPart(f[r]):e+n.urlPart(r),e==="?"&&(e="&"));c=o(f,h,e);t=t+c}return t},filter:null};return r});define("logging",["window"],function(n){function r(n,t){if(n.addEventListener)n.addEventListener("error",t,!1);else if(n.onerror){var i=n.onerror;n.onerror=function(n,r,u,f,e){return i(n,r,u,f,e),t(n,r,u,f,e)}}else n.onerror=t}function t(t){n.console&&(console.error||console.log)(t)}function u(){}function f(){}function e(t){(n.console||{}).timeStamp?console.timeStamp(t):(n.performance||{}).mark&&n.performance.mark(t)}var i=0;return r(n,function(n){return i++,n&&t("[SCRIPTERROR] "+n),!0}),{error:t,fatalError:t,unhandledErrorCount:function(){return i},perfMark:e,warning:u,information:f}})//]]></script><script type="text/javascript" src="//static-global-s-msn-com.akamaized.net/hp-eus/_h/4c59fa2c/webcore/externalscripts/jquery/jquery-1.11.1.min.js"></script>
+ 
+ <style>.spartan #main .paging-container.snap{overflow-x:hidden}#main .poc.topsites li{width:14.2%}#main .simple.poc.topsites a{height:16.5rem;width:16.5rem}#addRemoveSectionsModalContainer #addRemoveSectionsModal{display:block}.stripecontainer .stripeouter.noborder{height:33.7rem}.mobile #header-common>h1 a.vertical{color:#fff}.ip .nativead .caption .nativead{color:#a0a0a0}html[dir='rtl'] .ie8 .mip>ul>li.triptych h3+a{border-right:0}html[dir='ltr'] .ie8 .mip>ul>li.triptych h3+a{border-left:0}.meflyouts .integratedskype .signin>ul li:first-child{display:none}.tmx.pc.webkit.chrome .stripecontent ul{overflow-x:hidden}.mobile .galleryinfo .img-divider{display:none}.homepage.tmx.pc.chrome #main .one-col,.homepage.tmx.pc.chrome #main .two-col,.homepage.tmx.pc.chrome #main .three-col{margin-right:-.016rem;margin-left:-.016rem}.homepage.midlevel .pagingsection>button.show,.channelplayerpage.midlevel .pagingsection>button.show{display:none}.settings.start.tmx.pc .globalsettings .social.twitter{display:none}@media screen and (max-width:52.303em){#irisbanner .irisbanner header>a{max-width:33rem}}.tmx.pc.webkit.chrome .msame_Header_pic{height:5rem}</style>
+</head>
+
+<body class="startpage sp center-content start">
+ 
+
+ <div id="banners">
+
+
+
+ </div>
+
+<div class="head">
+<div>
+<div id="topnav">
+ <ul class="verticalsnav">
+ <li  class="current">
+<a href="/en-us">Home</a>
+</li>
+ <li >
+<a href="/en-us/news">News</a>
+</li>
+ <li >
+<a href="/en-us/weather">Weather</a>
+</li>
+ <li >
+<a href="/en-us/news/coronavirus">Coronavirus News</a>
+</li>
+ <li >
+<a href="/en-us/news/elections-2020">Election 2020</a>
+</li>
+ <li >
+<a href="/en-us/entertainment">Entertainment</a>
+</li>
+
+ <li class="more">
+<a href="#nav">More ></a>
+<ul>
+ <li >
+<a href="/en-us/sports">Sports</a>
+</li>
+ <li >
+<a href="/en-us/money">Money</a>
+</li>
+ <li >
+<a href="/en-us/lifestyle">Lifestyle</a>
+</li>
+ <li >
+<a href="/en-us/health">Health &amp; Fitness</a>
+</li>
+ <li >
+<a href="/en-us/foodanddrink">Food &amp; Drink</a>
+</li>
+ <li >
+<a href="/en-us/travel">Travel</a>
+</li>
+ <li >
+<a href="/en-us/autos">Autos</a>
+</li>
+ <li >
+<a href="/en-us/video">Video</a>
+</li>
+ <li >
+<a href="/en-us/kids">Kids</a>
+</li>
+ <li >
+<a href="/en-us/news/causes">For Good</a>
+</li>
+ </ul>
+</li>
+ </ul>
+</div>
+  <div id="header-common">
+<div class="header">
+<div class="header-logo">
+  <a class="logo" href="/en-us" tabindex="2">
+ 
+
+<img alt="" height="20" width="20" src="//static-global-s-msn-com.akamaized.net/hp-eus/sc/82/c22c7d.gif" />
+</a>
+ <a class="vertical" href="/en-us" tabindex="2">msn</a>
+
+
+
+</div>
+<div id="header-links">
+ <a href="http://www.outlook.com/">Outlook.com</a>
+ <span>|</span>
+ <a href="/en-us/settings/markettoggle"><img alt="en-us" src="//static-global-s-msn-com.akamaized.net/hp-eus/sc/6a/a62410.gif" /></a>
+
+<a class="navigation" href="#nav">
+<img  alt="go to navigation" width="27" height="20" src="//static-global-s-msn-com.akamaized.net/hp-eus/sc/57/a49b8d.gif" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+ 
+<div id="header-search">
+<form action="http://www.bing.com/search?scope=web" method="get" id="srchfrm">
+<div class="searchbox">
+<input type="text" id="q" name="q" value="" />
+<input type="hidden" name="form" value="PRUSDL" />
+ <input type="hidden" name="mkt" value="en-us" />
+  <input type="hidden" name="httpsmsn" value="1">
+    <input type="hidden" name="msnews" value="1">
+ <input type="hidden" name="refig" value="f638840b7a7b4185b3c1642aee6d6386">
+<input type="submit" class="text" value="web search" title="web search" />
+ <div id="sw_as"> </div>
+ </div>
+</form>
+ <script type="text/javascript">
+            //<![CDATA[
+            var srchInput = document.getElementById("q");
+            function sj_be(el, evt, mth) {
+                if (el.addEventListener) {
+                    el.addEventListener(evt, mth, false);
+                }
+                else if (el.attachEvent) {
+                    el.attachEvent("on" + evt, mth);
+                }
+                else {
+                    el["on" + evt] = mth;
+                }
+            }
+
+            function sj_ue(el, evt, mth) {
+                if (el.removeEventListener) {
+                    el.removeEventListener(evt, mth, false);
+                }
+                else if (el.detachEvent) {
+                    el.detachEvent("on" + evt, mth);
+                }
+                else {
+                    el["on" + evt] = null;
+                }
+            }
+
+            function loadScript(url, callback) {
+                var script = document.createElement("script")
+                script.type = "text/javascript";
+
+                if (script.readyState) {
+                    script.onreadystatechange = function () {
+                        if (script.readyState == "loaded" || script.readyState == "complete") {
+                            script.onreadystatechange = null;
+                            callback();
+                        }
+                    };
+                }
+                else {
+                    script.onload = function () {
+                        callback();
+                    };
+                }
+
+                script.src = url;
+                document.getElementsByTagName("head")[0].appendChild(script);
+            }
+
+            function initAS() {
+                loadScript("http://www.bing.com/s/as/1436447/en.js", function () {
+                    var config = { u: 'http://api.bing.com/qsonhs.aspx?form=MSN005', tPN: 'Popular Now', f: 'srchfrm', i: 'q', r: 'AutoSugShared', o: 's+a+p+hs+', h: 1, k: 0, m: 8, d: 100, ol: 1, eHS: 1, spr: 0 };
+                    if (typeof window.sa_autosuggest != "undefined") {
+                        window["sa_inst"] = new window.sa_autosuggest(config);
+                        window["sa_inst"].init("sa_inst");
+                    }
+                });
+                sj_ue(srchInput, 'click', initAS);
+            }
+
+            if (srchInput) {
+                sj_be(srchInput, 'click', initAS);
+            }
+            //]]>
+        </script>
+</div>
+
+</div>
+ 
+ 
+<div class="upgradebrowser">
+ You are using an older browser version. Please use a <a href="http://support2.microsoft.com/kb/2999871/en-us">supported version</a> for the best MSN experience.
+</div>
+
+
+
+</div>
+<div id="maincontent">
+ 
+<div id="main"  data-region="main">
+ 
+
+ 
+ <div class="today">
+
+
+	<div class="weatodaytile"  data-module-id="startpage|todayDownlevel|section|DownlevelMiniWeather|WeatherTodayTileModule"   data-aop="todayweathersd_weathertodaythreedaystilemodule">
+<a  href="/en-us/weather/today/Milwaukee,Wisconsin,United-States/we-city?iso=US&amp;el=VDZHlqs5mPVO99WSA58pIg%3D%3D" data-loc="lat=43.16&amp;long=-88.04&amp;c=Milwaukee&amp;st=Wisconsin&amp;cn=United%20States&amp;iso=US&amp;type=1">
+<div class="weatileleft">
+<img class="skycond" src="//img-s-msn-com.akamaized.net/tenant/amp/entityid/BB8MNzQ.img?m=6&amp;o=true&amp;u=true&amp;n=true&amp;w=40&amp;h=40"
+
+data-src="{&quot;default&quot;:&quot;//img-s-msn-com.akamaized.net/tenant/amp/entityid/BB8MNzQ.img?m=6&amp;o=true&amp;u=true&amp;n=true&amp;w=40&amp;h=40&quot;}"
+alt="Clear" title="Clear" data-icon="28" />
+	<div><span class="currentcond">45&#176;</span><span class="tempunit">F</span></div>
+</div>
+<div class="weatileright">
+<span class="weacity">Milwaukee, Wisconsin</span>
+<span class="skytext">Today, Clear</span>
+<span class="tempavghigh">High 53&#176;</span>
+<span class="tempavglow">Low 35&#176;</span>
+</div>
+	</a>
+
+ <div class="edit"  data-aop="change">
+<a class="edithome" href="#" aria-label="Change location or temperature unit" data-degreetype="F" 
+data-home="Search for Location / City" title="Change">Change</a>
+</div>
+<div class="weapopup" role="dialog" aria-labelledby="weaaddlocation-label"  data-aop="editweatherflyout"  data-region="editweatherflyout">
+<div class="weaddn wpopbg"></div>
+<div class="weaddn wpopctn">
+<a class="close"  role="button" href="#" title="Close">Close</a>
+ 
+
+<div class="weaaddlocation">
+
+<form  action="/en-us/weather/search" data-action="/en-us/weather/ajax/places/search/" method="get" >
+ 
+<p class="label" id="weaaddlocation-label">Set Default Location</p>
+<div class="add-loc-as-container">
+<input name="q" class="query" accesskey="L" autocomplete="off" type="search" aria-autocomplete="list"
+value="" maxlength="250" data-auto-suggest-settings='{&quot;market&quot;:&quot;en-us&quot;,&quot;mode&quot;:&quot;AS&quot;,&quot;baseurl&quot;:&quot;/en-us/weather/today&quot;,&quot;action&quot;:&quot;sethome&quot;,&quot;method&quot;:&quot;custom&quot;,&quot;selector&quot;:&quot;.weaaddlocation&quot;,&quot;urltype&quot;:&quot;GeoLocation&quot;,&quot;formcode&quot;:&quot;&quot;,&quot;lat&quot;:43.163,&quot;lon&quot;:-88.0378}'
+                   placeholder="Search for Location / City" data-seemoretext="Press &lt;Enter&gt; to see more" data-autosuggestdelay="100"
+                   aria-label="Search for Location / City"  />
+<button type="submit" title ="Search" class="searchbtn" 
+  aria-label="search">
+<span class="x-screen-reader">Search</span>               
+            </button>
+        </div>
+        <div class="nolocerr" aria-live="assertive" data-message="No search results for &#39;{0}&#39;"></div>
+<div class="errmsg" aria-hidden="true" data-error-in-service-message="An unexpected error occurred, please try again."></div>
+<div class="suggestmsg"></div>
+<div class="autosuggestresults" ></div>
+ 
+</form>
+</div>
+
+ 
+
+
+<div  role="radiogroup">
+<p>Display Temperature In</p>
+<form id="id3c242e9691ae4e31ac514a2109d8d7be" class="setdegree"  action="/en-us/weather/ajax/places/savedegree/" method="post">
+ 
+<div>
+<button name="weaDegreeType" id="id3c242e9691ae4e31ac514a2109d8d7be_fahrenheit" value="F"
+                        class="selected"
+ role="radio"
+ >
+<span class="dot"></span>
+</button>
+<label for="id3c242e9691ae4e31ac514a2109d8d7be_fahrenheit" form="id3c242e9691ae4e31ac514a2109d8d7be">Fahrenheit</label>
+            </div>
+            <div>
+                <button name="weaDegreeType" id="id3c242e9691ae4e31ac514a2109d8d7be_celsius" value="C"
+                        class=""
+ role="radio"
+ >
+<span class="dot"></span>
+</button>
+<label for="id3c242e9691ae4e31ac514a2109d8d7be_celsius" form="id3c242e9691ae4e31ac514a2109d8d7be">Celsius</label>
+</div>
+ 
+</form>
+</div>
+
+<button  class="donebutton disabled" disabled="disabled" title="Done">Done</button>
+</div>
+</div>
+	</div>
+ <div class="popularnow">
+ <h3><a href="https://www.msn.com/en-us/news" >TRENDING NOW</a></h3>
+                        <ul>
+                            <li>    <a href="https://bing.com/covid?form=msntrk" >
+
+COVID-19 Tracker    </a>
+</li>
+<li>    <a href="https://www.msn.com/en-us/tv/celebrity/seinfeld-star-trek-actor-gene-dynarski-dies-at-86/ar-BB13a5ur" >
+
+&#39;Seinfeld,&#39; &#39;Star Trek&#39; actor dies    </a>
+</li>
+                        </ul>
+                        <ul>
+                            <li>    <a href="https://www.msn.com/en-us/lifestyle/royals/meghan-markle-says-her-dad-was-exploited-by-the-press-as-privacy-case-begins/ar-BB139zD6" >
+
+Markle: Press &#39;exploited&#39; dad    </a>
+</li>
+<li>    <a href="https://www.msn.com/en-us/news/crime/michael-avenatti-released-from-jail-over-coronavirus-fears/ar-BB139QYG" >
+
+Avenatti released    </a>
+</li>
+                        </ul>
+                    </div>
+ </div>
+ <div class="stripe first">
+<h2>Today</h2>    <a href="/en-us/news/us/testing-remains-scarce-as-governors-weigh-reopening-states/ar-BB13c7Qe?li=BBnb7Kz" >
+<img alt="Hospital staff with flu-like symptoms were tested for the coronavirus last month..." height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13camy.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=720&amp;y=422" title="On the Front Lines, Testing Shortages Cloud Decisions on the Economy - Misha Friedman/Getty Images" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/news/us/testing-remains-scarce-as-governors-weigh-reopening-states/ar-BB13c7Qe?li=BBnb7Kz" >
+
+Testing Remains Scarce as Governors Weigh Reopening    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/politics/faucis-absence-from-recent-coronavirus-briefings-draws-notice/ar-BB13bZ4R?li=BBnb7Kz" >
+
+Fauci&#39;s absence from briefings draws notice    </a>
+
+</li>
+ <li >
+     <a href="/en-us/health/medical/us-coronavirus-some-states-begin-to-reopen-as-us-closes-in-on-1-million-coronavirus-cases/ar-BB13aYtx?li=BBnb7Kz" >
+
+US closes in on 1 million cases    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/world/train-belonging-to-kim-jong-un-spotted-as-health-rumors-persist/ar-BB13bLQ7?li=BBnb7Kz" >
+
+Train Belonging to Kim Jong Un Spotted as Health Rumors Persist    </a>
+
+</li>
+ <li >
+     <a href="https://www.comparecards.com/guide/pay-0-interest-until-2021?utm_source=msnhp&amp;grp=pay-0-2021&amp;utm_medium=native&amp;pla=www.msn.com&amp;tar=edge30&amp;acqs=prospecting&amp;bdst=revshare&amp;esourceid=6381596&amp;utm_campaign=20200425&amp;utm_content=transfer+your+debt+and+pay+no+interest+until+2021&amp;adt=bluebackcoinstack&amp;c3=24H&amp;mtaid=100F2&amp;placement_name=edge30&amp;ad_headline=transfer+your+debt+and+pay+no+interest+until+2021&amp;ad_image_name=bluebackcoinstack&amp;ad_group_name=pay-0-2021&amp;campaign_date=20200425&amp;day_part=24H"                                                 target="_blank"
+ data-pg="1" data-pid="7HD66FC">
+
+                <span  class="nativead">Sponsored: </span>
+Transfer your debt and pay no interest until 2021                <img  class="nativead"
+                      />
+    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/news/milwaukee" >Milwaukee</a></h2>    <a href="https://www.msn.com/en-us/news/us/coronavirus-1-376-hospitalized-in-wisconsin-as-of-saturday/ar-BB13chKR?ocid=hplocalnews" >
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13cdVs.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f" title="Coronavirus: 1,376 Hospitalized In Wisconsin As Of Saturday - Provided by Patch" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="https://www.msn.com/en-us/news/us/coronavirus-1-376-hospitalized-in-wisconsin-as-of-saturday/ar-BB13chKR?ocid=hplocalnews" >
+
+Coronavirus: 1,376 Hospitalized In Wisconsin As Of Saturday    </a>
+
+</li>
+ <li >
+     <a href="https://www.msn.com/en-us/sports/nfl/alex-rodriguez-reacts-to-fitting-names-of-packers-quarterbacks/ar-BB13aP3p?ocid=hplocalnews" >
+
+Alex Rodriguez reacts to fitting names of Packers’ quarterbacks    </a>
+
+</li>
+ <li >
+     <a href="https://www.msn.com/en-us/news/us/a-warrior-on-behalf-of-the-community-george-matthews-a-veteran-and-advocate-for-sherman-park-neighborhood-dies-from-coronavirus/ar-BB13cnxw?ocid=hplocalnews" >
+
+&#39;A warrior on behalf of the community&#39;: George Matthews, a veteran and advocate for Sherman Park neighborhood, dies from coronavirus    </a>
+
+</li>
+ <li >
+     <a href="https://www.msn.com/en-us/news/us/fiserv-forum-acting-as-distribution-center-for-mask-making-kits/ar-BB13cmM5?ocid=hplocalnews" >
+
+Fiserv Forum acting as distribution center for mask-making kits    </a>
+
+</li>
+ <li >
+     <a href="https://www.msn.com/en-us/health/medical/wisconsin-records-highest-one-day-coronavirus-case-increase/ar-BB13c5aY?ocid=hplocalnews" >
+
+Wisconsin Records Highest One-Day Coronavirus Case Increase    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/entertainment" >Entertainment</a></h2>    <a href="/en-us/entertainment/celebrity/stars-turning-80-in-2020/ss-BB10K58M?li=BBnb2gh" >
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/AAD4IV0.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=1169&amp;y=907" title="The most stunning women in Hollywood over 70 - Jim Smeal/REX/Shutterstock" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/entertainment/celebrity/stars-turning-80-in-2020/ss-BB10K58M?li=BBnb2gh" >
+
+Stars turning 80 in 2020    </a>
+
+</li>
+ <li >
+     <a href="/en-us/entertainment/humor/comics-half-full-by-maria-scrivan/ss-BBVlo2w?li=BBnb2gh" >
+
+30 comics that will make you chuckle    </a>
+
+</li>
+ <li >
+     <a href="/en-us/entertainment/celebrity/candid-celeb-pics-you-need-to-see-this-week/ss-BB138ISR?li=BBnb2gh" >
+
+Candid Celeb Pics You Need to See This Week    </a>
+
+</li>
+ <li >
+     <a href="/en-us/tv/news/will-and-grace-creators-address-rumored-megan-mullally-debra-messing-feud/ar-BB139PFj?li=BBnb2gh" >
+
+&#39;Will &amp; Grace&#39; creators address rumored Mullally, Messing feud    </a>
+
+</li>
+ <li >
+     <a href="/en-us/entertainment/celebrity/daymond-john-denies-mask-price-gouging-and-more-icymi-celeb-news/ss-BB139BHk?li=BBnb2gh" >
+
+Daymond John denies mask price gouging and more ICYMI celeb news    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2>From Our Partners</h2>    <a href="https://beverlyhillsmd.com/cmd.php?ad=966974"                                                 target="_blank"
+ data-pg="1" data-pid="7HD66FC">
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13a3wU.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f" title="BHMD" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="https://beverlyhillsmd.com/cmd.php?ad=966974"                                                 target="_blank"
+ data-pg="1" data-pid="7HD66FC">
+
+                <span  class="nativead">Sponsored: </span>
+How To Fix Aging Skin (Do This Every Day)                <img  class="nativead"
+                      />
+    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/money" >Money</a></h2>    <a href="/en-us/money/personalfinance/frustrations-build-for-those-still-awaiting-stimulus-checks/ar-BB136cls?li=BBnbfcN" >
+<img alt="Social Security checks are printed at the U.S. Treasury Philadelphia Finance Cen..." height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/AA7SKRX.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=495&amp;y=767" title="Social Security checks are printed at the U.S. Treasury Philadelphia Finance Cen... - Dennis Brack/Bloomberg News" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/money/personalfinance/frustrations-build-for-those-still-awaiting-stimulus-checks/ar-BB136cls?li=BBnbfcN" >
+
+Frustrations build for those still awaiting stimulus checks    </a>
+
+</li>
+ <li >
+     <a href="/en-us/money/personalfinance/food-rent-health-insurance-tough-choices-in-pandemic-economy/ar-BB131Rea?li=BBnbfcN" >
+
+Food, rent or insurance? Tough choices in pandemic economy    </a>
+
+</li>
+ <li >
+     <a href="/en-us/money/realestate/rich-urbanites-are-fleeing-big-cities-and-draining-resources-in-smaller-more-remote-vacation-spots-heres-where-theyre-going/ss-BB12PW7q?li=BBnbfcN" >
+
+Where the wealthy have fled to during the pandemic    </a>
+
+</li>
+ <li >
+     <a href="/en-us/money/markets/getting-unemployment-has-been-a-nightmare-for-millions-of-people-across-the-country/ar-BB12UUaj?li=BBnbfcN" >
+
+Getting unemployment has been a nightmare for millions    </a>
+
+</li>
+ <li >
+     <a href="/en-us/money/markets/too-much-oil-how-a-barrel-came-to-be-worth-less-than-nothing/ar-BB12WpFo?li=BBnbfcN" >
+
+How a barrel of oil came to be worth less than nothing    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/lifestyle" >Lifestyle</a></h2>    <a href="/en-us/lifestyle/lifestyle-buzz/these-photos-show-nature-is-rebounding-during-the-pandemic/ss-BB139P7v?li=BBnbcA0" >
+<img alt="As the novel coronavirus pandemic rages across the globe, at least &lt;a href=&quot;h..." height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB139Kbs.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f" title="Unusual grass grows through the cobblestones in Piazza - Nicolò Campo/Getty Images" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/lifestyle/lifestyle-buzz/these-photos-show-nature-is-rebounding-during-the-pandemic/ss-BB139P7v?li=BBnbcA0" >
+
+These photos show nature is rebounding during the pandemic    </a>
+
+</li>
+ <li >
+     <a href="/en-us/lifestyle/royals/icymi-royals-news-you-need-to-know-for-april-2020/ss-BB135Wd1?li=BBnbcA0" >
+
+ICYMI: Royals news you need to know for April 2020    </a>
+
+</li>
+ <li >
+     <a href="/en-us/lifestyle/causes-animals/striking-national-geographic-photos-show-animals-that-could-disappear-from-the-face-of-the-earth/ss-AAHPvMF?li=BBnbcA0" >
+
+Striking photos show animals that could disappear    </a>
+
+</li>
+ <li >
+     <a href="/en-us/lifestyle/parenting/cure-your-familys-cabin-fever-with-30-super-fun-indoor-activities-for-kids/ss-BBSHqsD?li=BBnbcA0" >
+
+Cure your family&#39;s cabin fever with 30 super fun indoor activities for kids    </a>
+
+</li>
+ <li >
+     <a href="/en-us/lifestyle/lifestyle-buzz/kaia-gerber-gave-herself-a-tattoo/ar-BB137dHB?li=BBnbcA0" >
+
+Kaia Gerber gave herself a tattoo    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/sports" >Sports</a></h2>    <a href="/en-us/sports/nfl/nfl-world-reacts-to-49ers-trading-for-trent-williams/ar-BB13c0Rg?li=BBnba9I" >
+<img alt="As usual, fans had much to say about the Williams trade." height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13c5Ds.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=925&amp;y=466" title="As usual, fans had much to say about the Williams trade. - Geoff Burke-USA TODAY Sports" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/sports/nfl/nfl-world-reacts-to-49ers-trading-for-trent-williams/ar-BB13c0Rg?li=BBnba9I" >
+
+NFL world reacts to 49ers trading for Trent Williams    </a>
+
+</li>
+ <li >
+     <a href="/en-us/sports/nfl/packers-infuriate-fans-by-not-drafting-a-wide-receiver-with-any-of-their-nine-2020-picks/ar-BB13cmKP?li=BBnba9I" >
+
+Packers infuriate fans by not drafting a receiver    </a>
+
+</li>
+ <li >
+     <a href="https://www.bing.com:443/search?q=nfl+draft+2020&amp;refig=f638840b7a7b4185b3c1642aee6d6386" >
+
+See every pick of the 2020 NFL Draft    </a>
+
+</li>
+ <li >
+     <a href="/en-us/sports/nfl/tom-brady-may-have-already-broken-an-nfl-rule-in-tampa-and-teams-want-to-see-him-punished-for-it/ar-BB13c9EA?li=BBnba9I" >
+
+Has Brady already broken an NFL rule in Tampa?    </a>
+
+</li>
+ <li >
+     <a href="/en-us/sports/nfl/obriens-terrible-explanation-for-his-nfl-draft-outburst/ar-BB13cate?li=BBnba9I" >
+
+O&#39;Brien&#39;s terrible explanation for his NFL draft outburst    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/news" >News</a></h2>    <a href="/en-us/news/world/cruise-ships-kept-sailing-in-the-caribbean-even-as-signs-of-sickness-spread/vi-BB13bI82" >
+<img alt="Cruise ships kept sailing in the Caribbean, even as signs of sickness spread" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13bKWX.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f" title="Cruise ships kept sailing in the Caribbean, even as signs of sickness spread - Provided by The Washington Post" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/news/world/cruise-ships-kept-sailing-in-the-caribbean-even-as-signs-of-sickness-spread/vi-BB13bI82" >
+
+Cruise ships kept sailing in the Caribbean, even as signs of sickness spread    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/us/millions-of-credit-card-customers-cant-pay-their-bills-lenders-are-bracing-for-impact/ar-BB13bmMV?li=BBnbcA1" >
+
+Millions Can&#39;t Pay Their Credit Card Bills. Lenders Brace for Impact.    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/politics/trump-shares-cdc-guidance-warning-against-improper-use-of-household-cleaners/ar-BB13bZGs?li=BBnbcA1" >
+
+Under fire over remarks, Trump retweets CDC warning on cleaners    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/world/trump-and-putin-issue-rare-joint-statement-promoting-cooperation/ar-BB13c6Si?li=BBnbcA1" >
+
+Trump and Putin issue rare joint statement promoting cooperation    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/politics/michigan-state-senator-apologizes-for-wearing-face-mask-that-resembles-confederate-flag/ar-BB13cczV?li=BBnbcA1" >
+
+Mich. state senator apologizes for mask resembling Confederate flag    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/health" >Health &amp; Fitness</a></h2>    <a href="/en-us/health/medical/6-new-coronavirus-symptoms-the-cdc-wants-you-to-know/ss-BB139cCa?li=BBnba9O" >
+<img alt="Since the coronavirus began to hit the U.S., the Centers for Disease Control ..." height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB139cBX.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=514&amp;y=364" title="6 New Coronavirus Symptoms the CDC Wants You to Know - Provided by Best Life" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/health/medical/6-new-coronavirus-symptoms-the-cdc-wants-you-to-know/ss-BB139cCa?li=BBnba9O" >
+
+New coronavirus symptoms the CDC wants you to know    </a>
+
+</li>
+ <li >
+     <a href="/en-us/health/medical/13-early-signs-youve-caught-coronavirus/ss-BB11KJbg?li=BBnba9O" >
+
+13 early signs you&#39;ve caught coronavirus    </a>
+
+</li>
+ <li >
+     <a href="/en-us/health/wellness/5-germ-fighting-habits-you-should-use-now-and-forever/ar-BB130fZl?li=BBnba9O" >
+
+5 germ-fighting habits you should use now and forever    </a>
+
+</li>
+ <li >
+     <a href="/en-us/health/health-news/where-can-i-get-a-covid-19-antibody-test-and-is-it-reliable-heres-everything-you-need-to-know/ar-BB139Xnl?li=BBnba9O" >
+
+Even if you can find an antibody test, it may not tell you much    </a>
+
+</li>
+ <li >
+     <a href="/en-us/health/fitness/clear-signs-youre-not-getting-enough-exercise/ss-BB12Nv5V?li=BBnba9O" >
+
+Clear signs you&#39;re not getting enough exercise    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/autos" >Autos</a></h2>    <a href="https://www.msn.com/en-us/autos/" >
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB139UYB.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f" title="The past and future of the Dodge Viper - MotorTrend" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="https://www.msn.com/en-us/autos/" >
+
+The past and future of the Dodge Viper    </a>
+
+</li>
+ <li >
+     <a href="/en-us/autos/enthusiasts/14-things-you-didnt-know-about-the-chevrolet-corvette/ss-BB137LwE?li=BBnb4R5" >
+
+14 things you didn&#39;t know about the Chevrolet Corvette    </a>
+
+</li>
+ <li >
+     <a href="/en-us/autos/autos-sports/1000-hp-corvette-%e2%80%9czora%e2%80%9d-is-in-the-works-according-to-internal-gm-plans/ar-BB136l5u?li=BBnb4R5" >
+
+1,000-HP Corvette “Zora” is in the works, according to internal GM plans    </a>
+
+</li>
+ <li >
+     <a href="https://www.msn.com/en-us/autos/lincoln/sd-AAdaGXh" >
+
+Research all the latest about Lincoln on MSN Autos    </a>
+
+</li>
+ <li >
+     <a href="/en-us/autos/research/the-ford-focus-rs-is-dead-here-are-20-good-alternatives/ss-BB135H0q?li=BBnb4R5" >
+
+The Ford Focus RS is dead: Here are 20 good alternatives    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/foodanddrink" >Food &amp; Drink</a></h2>    <a href="/en-us/foodanddrink/recipes/50-insanely-delicious-ways-to-use-canned-biscuits/ss-BB138Uxp?li=BBnb7Kw" >
+<img alt="You can make these bites in advance and refrigerate them before frying. Just be ..." height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/AABPmLy.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=565&amp;y=643" title="Pizza Monkey Bread - Taste of Home" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/foodanddrink/recipes/50-insanely-delicious-ways-to-use-canned-biscuits/ss-BB138Uxp?li=BBnb7Kw" >
+
+50 delicious ways to use canned biscuits    </a>
+
+</li>
+ <li >
+     <a href="/en-us/foodanddrink/did-you-know/50-once-popular-foods-that-have-vanished-from-grocery-stores/ss-BB10OC0M?li=BBnb7Kw" >
+
+50 once-popular foods that have vanished from grocery stores    </a>
+
+</li>
+ <li >
+     <a href="/en-us/foodanddrink/beverages/a-new-problem-is-brewing-in-the-beer-industry-one-million-kegs-are-going-stale/ar-BB1390dS?li=BBnb7Kw" >
+
+A problem is brewing in the beer industry: Kegs are going stale    </a>
+
+</li>
+ <li >
+     <a href="/en-us/foodanddrink/voices/im-under-lockdown-in-an-apartment-that-doesnt-have-a-kitchen-but-making-food-isnt-as-difficult-as-youd-think/ar-BB136N2t?li=BBnb7Kw" >
+
+Here&#39;s what it&#39;s like to cook in an apartment without a kitchen amid lockdown    </a>
+
+</li>
+ <li >
+     <a href="/en-us/foodanddrink/foodnews/chipotle-finally-shows-fan-exactly-how-to-make-its-guacamole/ar-BB13a7mZ?li=BBnb7Kw" >
+
+Chipotle finally shows fan exactly how to make its guacamole    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/travel" >Travel</a></h2>    <a href="/en-us/travel/travel-photos/what-15-famous-landmarks-look-like-zoomed-out/ss-BB12WJ2q?li=BBnbklE" >
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB12WJ2i.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f" title="Santorini - Feel good studio/Shutterstock" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/travel/travel-photos/what-15-famous-landmarks-look-like-zoomed-out/ss-BB12WJ2q?li=BBnbklE" >
+
+What 15 famous landmarks look like zoomed out    </a>
+
+</li>
+ <li >
+     <a href="/en-us/travel/travel-photos/photos-of-the-most-gorgeous-beaches-in-the-caribbean-atlantic-and-pacific/ss-BB12YYk4?li=BBnbklE" >
+
+Photos of beautiful beaches in the Caribbean, Atlantic and Pacific    </a>
+
+</li>
+ <li >
+     <a href="/en-us/travel/news/what-happened-on-board-the-last-cruise-ship-still-at-sea/ar-BB13bb0O?li=BBnbklE" >
+
+What happened on board the last cruise ship still at sea    </a>
+
+</li>
+ <li >
+     <a href="/en-us/travel/travel-photos/the-spectacular-beauty-of-nature-around-the-world/ss-BB12J6Mp?li=BBnbklE" >
+
+The spectacular beauty of nature    </a>
+
+</li>
+ <li >
+     <a href="/en-us/travel/travel-trivia/one-fascinating-fact-about-each-of-americas-national-parks/ss-BB121TJ0?li=BBnbklE" >
+
+One fascinating fact about each of America&#39;s national parks    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/news/causes" >For Good</a></h2>    <a href="/en-us/entertainment/causes/theres-a-podcast-festival-to-raise-money-for-givedirectly-and-covid-19-relief%e2%80%94and-youre-invited/ar-BB13bh2M?li=BBUPk4T" >
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13bNQW.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=54&amp;y=60" title="Podapalooza - Podapalooza" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/entertainment/causes/theres-a-podcast-festival-to-raise-money-for-givedirectly-and-covid-19-relief%e2%80%94and-youre-invited/ar-BB13bh2M?li=BBUPk4T" >
+
+There’s a podcast festival this weekend to raise money for COVID-19 relief    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/environment/arbor-day-bizarre-trees-with-a-fascinating-history/ss-BB12LHlk?li=BBUPk4T" >
+
+Arbor Day: Bizarre trees with a fascinating history    </a>
+
+</li>
+ <li >
+     <a href="/en-us/lifestyle/causes-animals/pet-food-banks-offer-coronavirus-aid-amid-pandemic/ar-BB1372cn?li=BBUPk4T" >
+
+Pet food banks offer coronavirus aid amid pandemic    </a>
+
+</li>
+ <li >
+     <a href="/en-us/news/environment/family-forests-are-key-to-fighting-climate-change-but-they-need-help/ar-BB138zir?li=BBUPk4T" >
+
+Family Forests Are Key To Fighting Climate Change. But They Need Help.    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="/en-us/video" >Video</a></h2>    <a href="/en-us/video/animals/new-york-brewery-uses-dogs-to-help-deliver-beer-while-social-distancing/vi-BB13bYtN" >
+<img alt="New York brewery uses dogs to help deliver beer while social distancing" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/BB13bB84.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=332&amp;y=120" title="New York brewery uses dogs to help deliver beer while social distancing - Provided by CBS News" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="/en-us/video/animals/new-york-brewery-uses-dogs-to-help-deliver-beer-while-social-distancing/vi-BB13bYtN" >
+
+Brewery uses dogs to help deliver beer while social distancing    </a>
+
+</li>
+ <li >
+     <a href="/en-us/video/peopleandplaces/nurse-flattered-as-thousands-share-facebook-song/vi-BB13aRCY" >
+
+Nurse &#39;flattered&#39; as thousands share Facebook song    </a>
+
+</li>
+ <li >
+     <a href="/en-us/video/lifestyle/what-will-it-take-to-reopen-the-economy-in-a-safe-way/vi-BB13aCBs" >
+
+What will it take to reopen the economy in a safe way?    </a>
+
+</li>
+ <li >
+     <a href="/en-us/video/science/satellite-captures-55-million-year-old-desert-from-space/vi-BB13bYzN" >
+
+Satellite captures 55-million-year-old desert from space    </a>
+
+</li>
+ <li >
+     <a href="/en-us/video/peopleandplaces/couple-make-a-big-splash-for-perfect-wedding-photograph/vi-BB139oGZ" >
+
+Couple make a big splash for perfect wedding photograph    </a>
+
+</li>
+ </ul>
+
+</div>
+ <div class="stripe">
+<h2><a href="https://afflnk.microsoft.com/c/1239701/433017/7593?sharedid=PRIME_ENUS_HP_STORES_TITLE&u=https://www.microsoft.com/en-us/store/b/home" >Promotions</a></h2>    <a href="https://www.msn.com/en-us/money/personalfinance/savingsrates?csource=msn&amp;esourceid=6331386&amp;ctype=ratetablepromo&amp;cchannel=content&amp;cmethod=msnmoneyDA&amp;cproduct=savingsandcds&amp;ccreative=accountswantyoutosee_bluebackcoinstack"                                                 target="_blank"
+ data-pg="TSTPRMUS32" data-pid="7HD66FC">
+<img alt="" height="194" src="//static-global-s-msn-com.akamaized.net/img-resizer/tenant/amp/entityid/AAwfBoJ.img?h=194&amp;w=300&amp;m=6&amp;q=60&amp;u=t&amp;o=t&amp;l=f&amp;x=335&amp;y=246" width="300" />
+    </a>
+ <ul>
+ <li  class="first">
+     <a href="https://www.msn.com/en-us/money/personalfinance/savingsrates?csource=msn&amp;esourceid=6331386&amp;ctype=ratetablepromo&amp;cchannel=content&amp;cmethod=msnmoneyDA&amp;cproduct=savingsandcds&amp;ccreative=accountswantyoutosee_bluebackcoinstack"                                                 target="_blank"
+ data-pg="TSTPRMUS32" data-pid="7HD66FC">
+
+                <span  class="nativead">Sponsored: </span>
+The Savings Accounts Your Bank Doesn&#39;t Want You To See                <img  class="nativead"
+                      />
+    </a>
+
+</li>
+ <li >
+     <a href="https://www.nextadvisor.com/citi-diamond-preferred-review/?kw=msnhp_na_ed_rs1_diamond_lowapr_2yrs_gldhnd&amp;utm_source=msn&amp;utm_medium=cpc&amp;utm_ntwk=n&amp;utm_campaign=msnhp_na_ed_rs1_diamond_lowapr_2yrs_gldhnd"                                                 target="_blank"
+ data-pg="TSTPRMUS32" data-pid="7HD66FC">
+
+                <span  class="nativead">Sponsored: </span>
+This new offer is the longest balance transfer we’ve seen                <img  class="nativead"
+                      />
+    </a>
+
+</li>
+ </ul>
+
+</div>
+
+ 
+</div>
+<div id="aside"  data-region="aside">
+ 
+</div>
+<div id="nav">
+ <ul class="verticalsnav">
+ <li  class="current">
+<a href="/en-us">Home</a>
+</li>
+ <li >
+<a href="/en-us/news">News</a>
+</li>
+ <li >
+<a href="/en-us/weather">Weather</a>
+</li>
+ <li >
+<a href="/en-us/news/coronavirus">Coronavirus News</a>
+</li>
+ <li >
+<a href="/en-us/news/elections-2020">Election 2020</a>
+</li>
+ <li >
+<a href="/en-us/entertainment">Entertainment</a>
+</li>
+ <li >
+<a href="/en-us/sports">Sports</a>
+</li>
+ <li >
+<a href="/en-us/money">Money</a>
+</li>
+ <li >
+<a href="/en-us/lifestyle">Lifestyle</a>
+</li>
+ <li >
+<a href="/en-us/health">Health &amp; Fitness</a>
+</li>
+ <li >
+<a href="/en-us/foodanddrink">Food &amp; Drink</a>
+</li>
+ <li >
+<a href="/en-us/travel">Travel</a>
+</li>
+ <li >
+<a href="/en-us/autos">Autos</a>
+</li>
+ <li >
+<a href="/en-us/video">Video</a>
+</li>
+ <li >
+<a href="/en-us/kids">Kids</a>
+</li>
+ <li >
+<a href="/en-us/news/causes">For Good</a>
+</li>
+ </ul>
+</div>
+ </div>
+<div id="foot">
+<div> <a href="https://www.microsoft.com/en-us/">&#169; 2020 Microsoft</a>
+ <a href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy &amp; Cookies</a>
+ <a href="https://go.microsoft.com/fwlink/?LinkID=246338">Terms of use</a>
+ <a href="https://go.microsoft.com/fwlink/?LinkID=286759">About our Ads</a>
+ <a href="https://jfe.qualtrics.com/form/SV_d4ir2X6Zkgjw0rb">Feedback</a>
+ <a href="https://go.microsoft.com/fwlink/?LinkId=512703">Help</a>
+ <a href="/en-us/msn-worldwide">MSN Worldwide</a>
+ <a href="/en-us/newslettersignup">Newsletter</a>
+ <a href="https://go.microsoft.com/fwlink/?linkid=875132">Advertise</a>
+ <a href="https://blog.msn.com/">MSN Blog</a>
+ <a href="/en-us/news/us/about-us/ar-BBN0NAK">About Us</a>
+ <a href="/en-us/news/microsoftnews/microsoft-news-editorial-standards/ar-AADpBN5">Editorial Standards</a>
+</div>
+</div>
+  <div>
+ <img src="//c.msn.com/c.gif?udc=true&amp;rid=f638840b7a7b4185b3c1642aee6d6386&amp;rnd=637234618485833028&amp;rf=&amp;tp=http%253A%252F%252Fwww.msn.com%252F&amp;di=340&amp;lng=en-us&amp;activityId=f638840b7a7b4185b3c1642aee6d6386&amp;d.dgk=downlevel.pc&amp;d.imd=0&amp;st.dpt=&amp;st.sdpt=&amp;subcvs=homepage&amp;pg.n=startpage&amp;pg.t=hp&amp;pg.c=&amp;pg.p=prime&amp;anoncknm=&amp;issso=0&amp;aadState=0" alt="image beacon" width="1" height="1" /><img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=3000001&amp;cs_ucfr=1&amp;rn=637234618485833028&amp;c7=http%253A%252F%252Fwww.msn.com%252F&amp;c8=&amp;c9=" alt="image beacon" width="1" height="1" /><img src="https://web.vortex.data.msn.com/collect/v1/t.gif?name=&#39;Ms.Webi.PageView&#39;&amp;ver=&#39;2.1&#39;&amp;appId=&#39;JS:MSN&#39;&amp;ext-app-env=&#39;prod&#39;&amp;ext-javascript-libver=&#39;4.0.0-beta-10&#39;&amp;ext-user-localId=&#39;t:14C5A464ACA96C9E1AD6AADCAD016D4F&#39;&amp;*baseType=&#39;Ms.Content.PageView&#39;&amp;*isJs=False&amp;*title=&#39;&#39;&amp;*isLoggedIn=False&amp;*isManual=True&amp;*serverImpressionGuid=&#39;f638840b-7a7b-4185-b3c1-642aee6d6386&#39;&amp;-ver=&#39;1.0&#39;&amp;-impressionGuid=&#39;f638840b-7a7b-4185-b3c1-642aee6d6386&#39;&amp;-pageName=&#39;startpage&#39;&amp;-uri=&#39;http%253A%252F%252Fwww.msn.com%252F&#39;&amp;-referrerUri=&#39;&#39;&amp;-pageTags=&#39;{&quot;pg.t&quot;:&quot;hp&quot;%2C&quot;pg.p&quot;:&quot;prime&quot;%2C&quot;pg.c&quot;:&quot;&quot;%2C&quot;ex&quot;:&quot;&quot;%2C&quot;rid&quot;:&quot;f638840b7a7b4185b3c1642aee6d6386&quot;%2C&quot;clid&quot;:&quot;14C5A464ACA96C9E1AD6AADCAD016D4F&quot;%2C&quot;clidType&quot;:&quot;muid&quot;%2C&quot;di&quot;:&quot;340&quot;%2C&quot;partner&quot;:&quot;&quot;%2C&quot;publcat&quot;:&quot;&quot;%2C&quot;cvs&quot;:&quot;Browser&quot;%2C&quot;subcvs&quot;:&quot;homepage&quot;%2C&quot;entityId&quot;:&quot;&quot;%2C&quot;entitySrc&quot;:&quot;&quot;%2C&quot;provid&quot;:&quot;&quot;%2C&quot;dpt&quot;:&quot;&quot;%2C&quot;sdpt&quot;:&quot;&quot;%2C&quot;ar&quot;:&quot;0&quot;%2C&quot;dgk&quot;:&quot;downlevel.pc&quot;%2C&quot;imd&quot;:&quot;0&quot;%2C&quot;parentId&quot;:&quot;&quot;%2C&quot;pgIdx&quot;:&quot;&quot;%2C&quot;pgTot&quot;:&quot;&quot;%2C&quot;anoncknm&quot;:&quot;&quot;%2C&quot;afd&quot;:&quot;&quot;%2C&quot;issso&quot;:&quot;0&quot;%2C&quot;aadState&quot;:&quot;0&quot;}&#39;&amp;-behavior=0&amp;-market=&#39;en-us&#39;" alt="image beacon" width="1" height="1" />
+</div>
+
+ 
+     <script>
+        require(["headData", "pageInstance", "mediator", "c.deferred"], function (headData, pageInstance, mediator)
+        {
+        var url = '//www.bizographics.com/collect/?fmt=gif&pid=7850';
+        if (headData && headData.clientSettings && headData.clientSettings.static_page)
+        {
+            mediator.pub(pageInstance.eventName);
+            var rid = pageInstance.getActivityId();
+            url = url.replace(/([?&]rid=)[^&#]*/i, "$1" + rid);
+            }
+        new Image().src = url.replace(/&amp;/g, '&');
+    });
+    </script>
+    <noscript>
+        <div>
+            <img data-src="//www.bizographics.com/collect/?fmt=gif&amp;pid=7850&amp;ts=noscript" width="1" height="1" alt="" />
+        </div>
+    </noscript>
+
+ 
+</body>
+ <!--MSNAvailToken--></html>
